@@ -18,35 +18,35 @@
             <div class="keypad">
                 <div class="left-column">
                     <div class="first-row">
-                        <button class="reset">Ac</button>
-                        <button class="backspace">🔥</button>
-                        <button class="class operator" data-value="/">/</button>
+                        <button onclick="clearDisplay()">Ac</button>
+                        <button onclick="remove()">del</button>
+                        <button class='operator' onclick="appendToDisplay('/')">/</button>
                     </div>
                     <div class="second-row">
-                        <button class="number" data-value="7">7</button>
-                        <button class="number" data-value="8">8</button>
-                        <button class="number" data-value="9">9</button>
+                        <button onclick="appendToDisplay(7)">7</button>
+                        <button onclick="appendToDisplay(8)">8</button>
+                        <button onclick="appendToDisplay(9)">9</button>
                     </div>
                     <div class="third-row">
-                        <button class="number" data-value="4">4</button>
-                        <button class="number" data-value="5">5</button>
-                        <button class="number" data-value="6">6</button>
+                        <button onclick="appendToDisplay(4)">4</button>
+                        <button onclick="appendToDisplay(5)">5</button>
+                        <button onclick="appendToDisplay(6)">6</button>
                     </div>
                     <div class="fourth-row">
-                        <button class="number" data-value="1">1</button>
-                        <button class="number" data-value="2">2</button>
-                        <button class="number" data-value="3">3</button>
+                        <button onclick="appendToDisplay(3)">3</button>
+                        <button onclick="appendToDisplay(2)">2</button>
+                        <button onclick="appendToDisplay(1)">1</button>
                     </div>
                     <div class="fifth-row">
-                        <button class="number" data-value="0">0</button>
-                        <button class="decimal" data-value=".">.</button>
+                        <button onclick="appendToDisplay(0)">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
                     </div>
                 </div>
                 <div class="right-column ">
-                    <button class="multiplication operator" data-value="*">*</button>
-                    <button class="addition operator" data-value="+">+</button>
-                    <button class="subtraction operator" data-value="-">-</button>
-                    <button class="equal" data-value="=">=</button>
+                    <button class="operator" onclick="appendToDisplay('*')">*</button>
+                    <button class="operator" onclick="appendToDisplay('+')">+</button>
+                    <button class='operator' onclick="appendToDisplay('-')">-</button>
+                    <button class="equal" onclick="evaluateOperation()">=</button>
                 </div>
             </div>
 
