@@ -1,5 +1,15 @@
 body {
     margin: 0;
+
+}
+
+.dot {
+    height: 75vh;
+    width: 75vh;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(149, 253, 255), rgb(138, 132, 249));
+    position: relative;
+
 }
 
 .container {
@@ -12,48 +22,100 @@ body {
 }
 
 .history {
-    width: 100px;
+    max-width: max-content;
     height: 50px;
+    margin-bottom: 10px;
+    color: gray;
+
 }
 
 .current {
     width: 100px;
     height: 50px;
+    font-size: x-large;
+    max-width: max-content;
+
 }
 
 .calculator {
     display: flex;
-    background-color: aqua;
+    background-image: linear-gradient(white, rgb(132, 228, 249));
     flex-direction: column;
-    height: max-content;
-    max-width: max-content;
+    height: 50vh;
+    width: 25vh;
     justify-content: center;
     align-items: center;
     padding: 16px;
+    border-radius: 30px;
+    position: absolute;
 
+
+
+
+
+
+
+}
+
+.equal {
+    background-color: rgb(43, 151, 246);
+    color: white;
 }
 
 .keypad {
     display: flex;
+    gap: 12px;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    gap: 16px;
+
 }
 
 .right-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 
 }
 
+button {
+    height: 45px;
+    width: 45px;
+    border: white;
+    gap: 16px;
+    opacity: 0.5;
+    font-size: large;
+    border-radius: 10px;
+    color: rgb(6, 105, 120);
+
+    background-color: azure;
+
+
+}
+
+
+.zero {
+    width: 125px;
+}
+
+.operator {
+    background-color: rgb(164, 228, 249);
+    color: rgb(0, 149, 149);
+    font-size: large;
+}
+
+
 .display {
     display: flex;
-    background: white;
+    opacity: 100%;
     flex-direction: column;
-
-
+    margin-bottom: 50px;
+    width: 200px;
+    font-size: x-large;
+    color
 }

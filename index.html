@@ -10,6 +10,7 @@
 
 <body>
     <div class="container">
+        <div class="dot"></div>
         <div class="calculator">
             <div class="display">
                 <output class="history"></output>
@@ -38,15 +39,17 @@
                         <button onclick="appendToDisplay(1)">1</button>
                     </div>
                     <div class="fifth-row">
-                        <button onclick="appendToDisplay(0)">0</button>
-                        <button onclick="appendToDisplay('.')">.</button>
+                        <button class="zero" onclick="appendToDisplay(0)">0</button>
+
                     </div>
                 </div>
                 <div class="right-column ">
                     <button class="operator" onclick="appendToDisplay('*')">*</button>
                     <button class="operator" onclick="appendToDisplay('+')">+</button>
                     <button class='operator' onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('.')">.</button>
                     <button class="equal" onclick="evaluateOperation()">=</button>
+
                 </div>
             </div>
 
